@@ -1,6 +1,5 @@
 ﻿using static Common.Functions.DownloadFile.FileDownloader;
-using static Common.Functions.GetRandomAlphaNumericString.StringGenerator;
-using static System.IO.Path;
+using static Common.Functions.DownloadAndExtractZip.RandomZipFileNamer;
 
 namespace Common.Functions.DownloadAndExtractZip
 {
@@ -10,7 +9,7 @@ namespace Common.Functions.DownloadAndExtractZip
 
         public static string DownloadArchive(string uri, string destination)
         {
-            var path = Combine(destination, $"{Random(FileNameChars)}.zip");
+            var path = RandomArchivePath(destination);
             Download(uri, path);
             return path;
         }
