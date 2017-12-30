@@ -8,11 +8,11 @@ namespace Common.Functions.DownloadAndExtractZip
     {
         private const byte FileNameChars = 7;
 
-        public static string DownloadArchive(string uri, string directory)
+        public static string DownloadArchive(string uri, string destination)
         {
-            var downloadPath = Combine(directory, $"{Random(FileNameChars)}.zip");
-            Download(uri, downloadPath);
-            return downloadPath;
+            var path = Combine(destination, $"{Random(FileNameChars)}.zip");
+            Download(uri, path);
+            return path;
         }
     }
 }

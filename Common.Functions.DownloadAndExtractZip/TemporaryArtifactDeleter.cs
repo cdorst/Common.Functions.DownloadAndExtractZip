@@ -4,10 +4,10 @@ namespace Common.Functions.DownloadAndExtractZip
 {
     internal static class TemporaryArtifactDeleter
     {
-        public static void Delete(string downloadedZipPath, string extractPath)
+        public static void Delete(string archive, string extract)
         {
-            Directory.Delete(extractPath, recursive: true);
-            File.Delete(downloadedZipPath);
+            Directory.Delete(extract, recursive: true);
+            File.Delete(archive);
         }
     }
 }
