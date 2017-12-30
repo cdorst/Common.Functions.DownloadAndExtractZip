@@ -6,7 +6,7 @@ namespace Common.Functions.DownloadAndExtractZip
     {
         public static void Delete(string downloadedZipPath, string extractPath)
         {
-            Directory.Delete(extractPath);
+            Directory.Delete(extractPath, recursive: true);
             File.Delete(downloadedZipPath);
         }
     }
