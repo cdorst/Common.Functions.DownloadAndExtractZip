@@ -16,7 +16,7 @@
   <ItemGroup>
     <PackageReference Include="CDorst.Common.Functions.CopyAndPasteDirectory" Version="1.0.0" />
     <PackageReference Include="CDorst.Common.Functions.DownloadFile" Version="1.0.0" />
-    <PackageReference Include="CDorst.Common.Functions.ExtractZipToNewSubdirectory" Version="1.0.0" />
+    <PackageReference Include="CDorst.Common.Functions.ExtractZipToNewSubdirectory" Version="1.0.1" />
     <PackageReference Include="CDorst.Common.Functions.GetRandomAlphaNumericString" Version="1.0.0" />
   </ItemGroup>
 
