@@ -10,12 +10,12 @@
     <Description>Helper for downloading and extracting a zip archive to a given directory</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>CDorst.Common.Functions.DownloadAndExtractZip</PackageId>
-    <Version>1.0.0</Version>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="CDorst.Common.Functions.CopyAndPasteDirectory" Version="1.0.0" />
-    <PackageReference Include="CDorst.Common.Functions.DownloadFile" Version="1.0.0" />
+    <PackageReference Include="CDorst.Common.Functions.DownloadFile" Version="2.0.0" />
     <PackageReference Include="CDorst.Common.Functions.ExtractZipToNewSubdirectory" Version="1.0.1" />
     <PackageReference Include="CDorst.Common.Functions.GetRandomAlphaNumericString" Version="1.0.0" />
   </ItemGroup>
